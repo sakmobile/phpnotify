@@ -1,5 +1,5 @@
 <?php
-if($_GET['lat'] && $_GET['long'])){
+if($_GET['lat'] && $_GET['long']){
  $lat = $_GET['lat'];
  $long = $_GET['long'];
 define('LINE_API',"https://notify-api.line.me/api/notify");
