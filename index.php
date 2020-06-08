@@ -1,5 +1,5 @@
 <?php
-if($_GET['lat'] && $_GET['long']){
+
  $lat = $_GET['lat'];
  $long = $_GET['long'];
 define('LINE_API',"https://notify-api.line.me/api/notify");
@@ -26,8 +26,6 @@ function notify_message($message,$token){
  $res = json_decode($result);
  return $res;
 }
-}else{
- echo "ไม่มีข้อมูล";
-}
+
 ?>
 
