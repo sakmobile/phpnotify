@@ -2,6 +2,7 @@
 
  $lat = isset($_GET['lat']);
  $long = isset($_GET['long']);
+if($lat != "" && $long != ""){
 define('LINE_API',"https://notify-api.line.me/api/notify");
  
 $token = "c8Pk0ZaizdVp2wHOTsl7NGfK8FHeaENPBqIklsoX5Ri"; //ใส่Token ที่copy เอาไว้
@@ -26,5 +27,7 @@ function notify_message($message,$token){
  $res = json_decode($result);
  return $res;
 }
-
+}else{
+ echo "ไม่มีข้อมูล";
+}
 ?>
