@@ -1,8 +1,9 @@
 <?php
 
+ 
+if(isset($_GET['lat']) && isset($_GET['long'])){
  $lat = $_GET['lat'];
  $long = $_GET['long'];
-if($lat != "" && $long != ""){
 define('LINE_API',"https://notify-api.line.me/api/notify");
  
 $token = "c8Pk0ZaizdVp2wHOTsl7NGfK8FHeaENPBqIklsoX5Ri"; //ใส่Token ที่copy เอาไว้
