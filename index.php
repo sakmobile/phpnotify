@@ -1,7 +1,7 @@
 <?php
 
- $lat = isset($_GET['lat']);
- $long = isset($_GET['long']);
+ $lat = $_GET['lat'];
+ $long = $_GET['long'];
 if($lat != "" && $long != ""){
 define('LINE_API',"https://notify-api.line.me/api/notify");
  
